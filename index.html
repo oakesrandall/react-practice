@@ -3,8 +3,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.6/react-dom.js"></script>
 <script type="text/javascript">
   const rootElement = document.getElementById('root')
-  const element = document.createElement('div')
-  element.textContent = 'Hello World'
-  element.className = 'container'
-  rootElement.appendChild(element)
+  // const element = document.createElement('div')
+  // element.textContent = 'Hello World'
+  // element.className = 'container'
+  // rootElement.appendChild(element)
+  const element = React.createElement(
+    'div',
+    {className: 'container'},
+    'Hello World'
+  )
+  console.log(element)
+  ReactDOM.render(element, rootElement)
 </script>
